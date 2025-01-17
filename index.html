@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Personal Productivity Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Personal Productivity Dashboard</h1>
+<button id="theme-toggle">Toggle Dark Mode</button>
+</header>
+<main>
+<section id="contact-form-section">
+<h2>Contact Us</h2>
+<form id="contact-form">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required placeholder="Enter your name">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required placeholder="Enter your email">
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+<label for="message">Message:</label>
+<textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+<div id="captcha">
+<input type="checkbox" id="captcha-checkbox" required>
+<label for="captcha-checkbox">I am not a robot</label>
+</div>
+<button type="submit">Submit</button>
+<p id="form-feedback"></p>
+</form>
+</section>
+<section id="todo-list-section">
+<h2>To-Do List</h2>
+<form id="task-form">
+<input type="text" id="task-input" placeholder="Add a new task" required>
+<select id="task-category">
+<option value="Work">Work</option>
+<option value="Personal">Personal</option>
+<option value="Other">Other</option>
+</select>
+<input type="date" id="task-deadline" placeholder="Deadline">
+<select id="task-priority">
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+</select>
+<button type="submit">Add Task</button>
+</form>
+<input type="text" id="search-tasks" placeholder="Search tasks...">
+<ul id="task-list"></ul>
+</section>
+<section id="quotes-section">
+<h2>Motivational Quote</h2>
+<p id="quote-display">"Loading a motivational quote..."</p>
+<button id="new-quote-button">Get New Quote</button>
+</section>
+<section id="daily-goals-section">
+<h2>Daily Goals</h2>
+<input type="number" id="goal-total" placeholder="Set your goal (e.g., 5 tasks)">
+<button id="set-goal-button">Set Goal</button>
+<p id="goal-progress">0/0 tasks completed</p>
+<div id="progress-bar-container">
+<div id="progress-bar"></div>
+</div>
+</section>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>
